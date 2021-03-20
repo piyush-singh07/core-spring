@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="helloBean" class="com.dip.beans.HelloBean">
+	</bean>
+	<bean id="studentBean" class="com.dip.beans.StudentBean">
+		<property name="sid" value="s-111"></property>
+		<property name="sname" value="Piyush"></property>
+	</bean>
+	<bean id="empBean" class="com.dip.beans.Employee">
+		<property name="eno" value="E-111"></property>
+		<property name="sname" value="Employee 1 name"></property>
+		<property name="addr">
+			<bean id= "addressBean" class="com.dip.beans.Address">
+				<property name="hno" value="132k"></property>
+				<property name="street" value="lal sarai"></property>
+				<property name="city" value="Nagina"></property>
+			</bean>
+		</property>
+	</bean>
+</beans>

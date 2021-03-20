@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="helloBean" class="com.dip.classes.HelloBean">
+		<property name="message" value="Hello Sir"></property>
+	</bean>
+	<!-- <bean id="helloBean" class="com.dip.classes.HelloBean" factory-method="getInstance"> 
+		<property name="message" value="Hello Salam"></bean> -->
+	<!-- <bean id="helloBean" class="com.dip.classes.HelloBean" factory-bean="factory" 
+		factory-method="getBeanInstance"> <property name="message" value="Hello Salam"></property> 
+		</bean> <bean id="factory" class="com.dip.classes.HelloBeanFactory"></bean> -->
+</beans>
