@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="eacc" class="com.utc.beans.Account">
+		 <property name="acc_no" value="acc=1"></property>
+		<property name="acc_type" value="savings"></property> 
+		<!-- <constructor-arg name="acc_no" value="acc=1"></constructor-arg>
+		<constructor-arg name="acc_type" value="savings"></constructor-arg> -->
+	</bean>
+
+	<bean id="eaddr" class="com.utc.beans.Address">
+		 <property name="hno" value="132k"></property>
+		<property name="street" value="wall street"></property>
+		<property name="city" value="Hyd"></property> 
+		<!-- <constructor-arg index="0" value="132k"></constructor-arg>
+		<constructor-arg index="1" value="wall street"></constructor-arg>
+		<constructor-arg index="2" value="Hyd"></constructor-arg> -->
+	</bean>
+	<bean id="emp" class="com.utc.beans.Employee" autowire="constructor">
+			<constructor-arg index="0" value="s-111"></constructor-arg>
+		<constructor-arg index="1" value="Jack"></constructor-arg>
+
+
+	</bean>
+
+</beans>
