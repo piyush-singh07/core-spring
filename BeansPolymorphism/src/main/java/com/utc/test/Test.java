@@ -15,8 +15,5 @@ public class Test {
 	bean.getCollegeDetails();
 	context.registerShutdownHook();
 	context.close();
-	
-
 	}
-
 }
